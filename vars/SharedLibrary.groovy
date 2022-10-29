@@ -3,10 +3,10 @@ def call(Map config) {
 }
 
 def call() {
-  steps {
+ 
             script { 
                    echo 'Call of Shared Library paramater less'
             }
-       }
+     
 }
 
