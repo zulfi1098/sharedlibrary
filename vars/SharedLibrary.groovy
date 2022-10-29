@@ -1,13 +1,14 @@
 def call(Map config) {
   config.each() {
-    builders[it] = {stage(it){
-                                               script { 
-                   echo 'Call of Shared Library paramater less'
-            }
-                                            }}
+    builders[it] = {
+                        stage(it){
+                                 script { 
+                                            echo 'Call of Shared Library paramater less'
+                                        }
+                        }
+                    }
                                   
-                                }
-                                parallel builders
+                    parallel builders
   }
 }
 
