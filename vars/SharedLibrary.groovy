@@ -1,4 +1,5 @@
 def call(Map config) {
+def builders = [:]
   config.each() {
     builders[it] = {
                         stage(it){
