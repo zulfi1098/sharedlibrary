@@ -15,11 +15,3 @@ def builders = [:]
   }
 }
 
-def call(Map config) {
- 
-            script { 
-                   echo 'Call of Shared Library paramater less'
-            }
-     
-}
-
