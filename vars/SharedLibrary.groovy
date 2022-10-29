@@ -1,4 +1,6 @@
-def call(Map config) {
+def call() {
+
+def allModules = ['module1', 'module2', 'module3', 'module4', 'module5']
 def builders = [:]
   config.each() {
     builders[it] = {
@@ -13,7 +15,7 @@ def builders = [:]
   }
 }
 
-def call() {
+def call(Map config) {
  
             script { 
                    echo 'Call of Shared Library paramater less'
