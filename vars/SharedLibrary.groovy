@@ -3,5 +3,5 @@ def call(Map config) {
 }
 
 def call() {
-  echo 'Call of Shared Library'
+  echo 'Call of Shared Library paramater less'
 }
