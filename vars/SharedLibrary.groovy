@@ -1,7 +1,7 @@
-def defcall(Map config) {
+def call(Map config) {
   echo 'Call of Shared Library'
 }
 
-def defcall() {
+def call() {
   echo 'Call of Shared Library'
 }
