@@ -1,5 +1,14 @@
 def call(Map config) {
-  echo 'Call of Shared Library'
+  config.each() {
+    builders[it] = {stage(it){
+                                               script { 
+                   echo 'Call of Shared Library paramater less'
+            }
+                                            }}
+                                  
+                                }
+                                parallel builders
+  }
 }
 
 def call() {
