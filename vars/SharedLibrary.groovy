@@ -1,5 +1,5 @@
 def call() {
-    stage {
+    stage("build") {
     
         def allModules = ['module1', 'module2', 'module3', 'module4', 'module5']
         def builders = [:]
@@ -17,7 +17,7 @@ def call() {
 }
 
 def call1() {
-    stage {
+    stage(build) {
     
     def allModules = ['module1', 'module2', 'module3', 'module4', 'module5']
     def builders = [:]
