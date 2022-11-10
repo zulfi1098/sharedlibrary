@@ -16,3 +16,8 @@ def builders = [:]
   }
 }
 
+def call(String name) {
+    stage {
+        echo name
+      }
+}
