@@ -1,5 +1,5 @@
 def call() {
-
+stage {
 def allModules = ['module1', 'module2', 'module3', 'module4', 'module5']
 def builders = [:]
   config.each() {
@@ -12,6 +12,7 @@ def builders = [:]
                     }
                                   
                     parallel builders
+  }
   }
 }
 
