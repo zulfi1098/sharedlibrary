@@ -11,10 +11,8 @@ def call() {
                                                     }
                                     }
                                 }
-                                  
-                               
           }
-           parallel builders
+          parallel builders
     }
 }
 
