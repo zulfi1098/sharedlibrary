@@ -1,6 +1,6 @@
-def call(String name) {
+def call() {
 stage {
-    echo "Name call ${name}"
+    echo "Name call"
 def allModules = ['module1', 'module2', 'module3', 'module4', 'module5']
 def builders = [:]
   config.each() {
