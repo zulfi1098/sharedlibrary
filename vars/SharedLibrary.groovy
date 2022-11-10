@@ -3,7 +3,7 @@ stage {
     
 def allModules = ['module1', 'module2', 'module3', 'module4', 'module5']
 def builders = [:]
-  config.each() {
+  allModules.each() {
     builders[it] = {
                         stage(it){
                                  script { 
